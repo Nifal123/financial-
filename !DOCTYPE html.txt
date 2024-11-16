@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Financial Analysis Tool</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Team A - UOK</h1>
+    <img src="cfa_logo.png" alt="CFA Society Sri Lanka" class="logo">
+    <img src="windforce_logo.png" alt="WindForce" class="logo">
+  </header>
+
+  <main>
+    <section class="card">
+      <div class="calculation">
+        <h2>Upside Calculation</h2>
+        <p>Intrinsic Value: Rs. 25.75</p>
+        <p>Current Price: Rs. 20.00</p>
+        <p>Upside: 20%</p>
+        <button onclick="goBack()">Go Back</button>
+      </div>
+      <div class="calculation">
+        <h2>Return Calculation</h2>
+        <p>Investment: Rs. 25.75</p>
+        <p>Total Return: Rs. 20.00</p>
+        <button onclick="goBack()">Go Back</button>
+      </div>
+    </section>
+
+    <section class="input-section">
+      <div>
+        <h2>Enter the Current Share Price</h2>
+        <input type="number" id="currentPrice" placeholder="Enter Current Price">
+        <button onclick="calculateUpside()">Calculate Upside</button>
+      </div>
+      <div>
+        <h2>Enter the Invested Amount</h2>
+        <input type="number" id="investedAmount" placeholder="Enter Invested Amount">
+        <button onclick="calculateReturn()">Calculate Return</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2024 Team A - UOK</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

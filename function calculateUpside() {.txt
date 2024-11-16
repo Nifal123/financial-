@@ -1,0 +1,25 @@
+function calculateUpside() {
+  const currentPrice = document.getElementById("currentPrice").value;
+  const intrinsicValue = 25.75;
+  if (currentPrice) {
+    const upside = ((intrinsicValue - currentPrice) / currentPrice) * 100;
+    alert(`Upside: ${upside.toFixed(2)}%`);
+  } else {
+    alert("Please enter the current price.");
+  }
+}
+
+function calculateReturn() {
+  const investedAmount = document.getElementById("investedAmount").value;
+  const totalReturn = 20.00;
+  if (investedAmount) {
+    const returnPercentage = ((totalReturn - investedAmount) / investedAmount) * 100;
+    alert(`Return: ${returnPercentage.toFixed(2)}%`);
+  } else {
+    alert("Please enter the invested amount.");
+  }
+}
+
+function goBack() {
+  alert("Going back to the previous step.");
+}

@@ -1,0 +1,70 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #74ebd5, #ACB6E5);
+  color: #333;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  background: #004d40;
+  color: white;
+}
+
+header .logo {
+  height: 50px;
+}
+
+main {
+  padding: 2em;
+}
+
+.card {
+  display: flex;
+  justify-content: space-around;
+  padding: 1em;
+  background: #f5f5f5;
+  border-radius: 10px;
+  margin-bottom: 2em;
+}
+
+.calculation {
+  width: 45%;
+  background: #ffffff;
+  padding: 1em;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.calculation button {
+  background: #26a69a;
+  color: white;
+  border: none;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.input-section {
+  display: flex;
+  justify-content: space-around;
+}
+
+.input-section div {
+  width: 45%;
+  padding: 1em;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  padding: 1em;
+  background: #004d40;
+  color: white;
+}
