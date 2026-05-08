@@ -1,14 +1,4 @@
-# Generate your README.md automatically
-# Copy this output directly into your GitHub README
 
-best_strategy = tearsheet['Sharpe Ratio'].idxmax()
-best_row      = tearsheet.loc[best_strategy]
-bench_row     = tearsheet.loc['60/40 Benchmark']
-sharpe_improv = round(
-    (best_row['Sharpe Ratio'] - bench_row['Sharpe Ratio'])
-    / abs(bench_row['Sharpe Ratio']) * 100, 1)
-
-readme = f"""
 # Multi-Asset Portfolio Optimizer
 
 > Institutional-grade portfolio construction across 7 asset classes
